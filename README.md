@@ -53,26 +53,86 @@ Vapps.getPhoneTab (x: VappsPhoneLowerX, y: VappsPhoneLowerY): string
 ```
 Vapps.setTabMemoryActive (x: VappsPhoneLowerX, y: VappsPhoneLowerY, isTabMemoryActive: boolean)
 ```
-#### ◉ Vapps.getTabMemoryActive (x: VappsPhoneLowerX, y: VappsPhoneLowerY): boolean
-#### ◉ Vapps.getPhoneI18nDictionary (x: VappsPhoneLowerX, y: VappsPhoneLowerY, asJsonStr?: boolean, indent?: boolean): string | VappsPhoneDictionary
-#### ◉ Vapps.putPhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[])
-#### ◉ Vapps.putPhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
-#### ◉ Vapps.putPhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[])
-#### ◉ Vapps.putPhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
-#### ◉ Vapps.putPhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[])
-#### ◉ Vapps.putPhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
-#### ◉ Vapps.pushPhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[])
-#### ◉ Vapps.pushPhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
-#### ◉ Vapps.pushPhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[])
-#### ◉ Vapps.pushPhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
-#### ◉ Vapps.pushPhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[])
-#### ◉ Vapps.pushPhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
-#### ◉ Vapps.deletePhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
-#### ◉ Vapps.deletePhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
-#### ◉ Vapps.deletePhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
-#### ◉ Vapps.deletePhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
-#### ◉ Vapps.deletePhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
-#### ◉ Vapps.deletePhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+#### ◉ Vapps.getTabMemoryActive (x, y)
+```
+Vapps.getTabMemoryActive (x: VappsPhoneLowerX, y: VappsPhoneLowerY): boolean
+```
+#### ◉ Vapps.getPhoneI18nDictionary (x, y, asJsonStr, indent)
+```
+Vapps.getPhoneI18nDictionary (x: VappsPhoneLowerX, y: VappsPhoneLowerY, asJsonStr?: boolean, indent?: boolean): string | VappsPhoneDictionary
+```
+#### ◉ Vapps.putPhoneBookItems (x, y, items)
+```
+Vapps.putPhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[])
+```
+#### ◉ Vapps.putPhoneBookItemsByUrl (x, y, url, headers)
+```
+Vapps.putPhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+```
+#### ◉ Vapps.putPhoneHistoryItems (x, y, items)
+```
+Vapps.putPhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[])
+```
+#### ◉ Vapps.putPhoneHistoryItemsByUrl (x, y, url, headers)
+```
+Vapps.putPhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+```
+#### ◉ Vapps.putPhoneSpeedDialItems (x, y, items)
+```
+Vapps.putPhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[])
+```
+#### ◉ Vapps.putPhoneSpeedDialItemsByUrl (x, y, url, headers)
+```
+Vapps.putPhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+```
+#### ◉ Vapps.pushPhoneBookItems (x, y, items)
+```
+Vapps.pushPhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[])
+```
+#### ◉ Vapps.pushPhoneBookItemsByUrl (x, y, url, headers)
+```
+Vapps.pushPhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+```
+#### ◉ Vapps.pushPhoneHistoryItems (x, y, items)
+```
+Vapps.pushPhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[])
+```
+#### ◉ Vapps.pushPhoneHistoryItemsByUrl (x, y, url, headers)
+```
+Vapps.pushPhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+```
+#### ◉ Vapps.pushPhoneSpeedDialItems (x, y, items)
+```
+Vapps.pushPhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[])
+```
+#### ◉ Vapps.pushPhoneSpeedDialItemsByUrl (x, y, url, headers)
+```
+Vapps.pushPhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+```
+#### ◉ Vapps.deletePhoneBookItems (x, y, itemIDs)
+```
+Vapps.deletePhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
+```
+#### ◉ Vapps.deletePhoneBookItemsByUrl (x, y, url, headers)
+```
+Vapps.deletePhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+```
+#### ◉ Vapps.deletePhoneHistoryItems (x, y, itemIDs)
+```
+Vapps.deletePhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
+```
+#### ◉ Vapps.deletePhoneHistoryItemsByUrl (x, y, url, headers)
+```
+Vapps.deletePhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+```
+#### ◉ Vapps.deletePhoneSpeedDialItems (x, y, itemIDs)
+```
+Vapps.deletePhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
+```
+#### ◉ Vapps.deletePhoneSpeedDialItemsByUrl (x, y, url, headers)
+```
+Vapps.deletePhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+```
 
 ---
 
