@@ -11,7 +11,7 @@
 また、`Vapps` コントローラーには、`Vapps Phone` 内で発生するあらゆるイベントを取得可能なイベントリスナーが網羅的に実装されています。着信を受けた時、電話をかけた時、電話帳を編集した時、など全ての場面がリアルタイムに既存アプリケーション側に通知されるため、`VAPPS Phone` は完全に既存アプリケーションの一部として扱うことが可能です。
 
 ## VAPPS Phone 呼び出し関数
-### アプリ操作
+### ◼️ アプリ操作
 #### ◉ on (ename: string, callback: (e: CustomEvent) => void)
 #### ◉ off (ename: string, callback: (e: CustomEvent) => void)
 #### ◉ phone (options: VappsPhoneOptions): string
@@ -45,7 +45,7 @@
 
 ---
 
-### 電話操作
+### ◼️ 電話操作
 #### ◉ register()
 #### ◉ unregister()
 #### ◉ call()
