@@ -43,7 +43,7 @@ Vapps.getPhoneLocale (x: VappsPhoneLowerX, y: VappsPhoneLowerY): VappsPhoneLocal
 ```
 #### ◉ Vapps.setPhoneTab (x, y, tab)
 ```
-Vapps.setPhoneTab (x: VappsPhoneLowerX, y: VappsPhoneLowerY, tab?: VappsPhoneTabType)
+Vapps.setPhoneTab (x: VappsPhoneLowerX, y: VappsPhoneLowerY, tab: VappsPhoneTabType)
 ```
 #### ◉ Vapps.getPhoneTab (x, y)
 ```
