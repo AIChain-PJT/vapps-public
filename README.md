@@ -10,6 +10,7 @@
 
 また、`Vapps` コントローラーには、`Vapps Phone` 内で発生するあらゆるイベントを取得可能なイベントリスナーが網羅的に実装されています。着信を受けた時、電話をかけた時、電話帳を編集した時、など全ての場面がリアルタイムに既存アプリケーション側に通知されるため、`VAPPS Phone` は完全に既存アプリケーションの一部として扱うことが可能です。
 
+
 ## VAPPS Phone 呼び出し関数
 ### ◼️ アプリ操作
 #### ◉ Vapps.on (ename, callback)
@@ -37,6 +38,16 @@ Vapps.openPhone (x: VappsPhoneLowerX, y: VappsPhoneLowerY)
 INTERFACE
 ```
 Vapps.closePhone (x: VappsPhoneLowerX, y: VappsPhoneLowerY)
+```
+#### ◉ Vapps.openPhoneSnackbar (x, y, message, timeout?, icon?, line?)
+INTERFACE
+```
+Vapps.openPhoneSnackbar (x: VappsPhoneLowerX, y: VappsPhoneLowerY, message: string, timeout?: number, icon?: string, line?: 1 | 2)
+```
+#### ◉ Vapps.closePhoneSnackbar (x, y)
+INTERFACE
+```
+Vapps.closePhoneSnackbar (x: VappsPhoneLowerX, y: VappsPhoneLowerY)
 ```
 #### ◉ Vapps.setPhoneLocale (x, y, locale)
 INTERFACE
@@ -68,10 +79,55 @@ INTERFACE
 ```
 Vapps.getTabMemoryActive (x: VappsPhoneLowerX, y: VappsPhoneLowerY): boolean
 ```
+#### ◉ Vapps.setSaveBookInLocal (x, y, isSaveBookInLocal)
+INTERFACE
+```
+Vapps.setSaveBookInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, isSaveBookInLocal: boolean)
+```
+#### ◉ Vapps.getSaveBookInLocal (x, y)
+INTERFACE
+```
+Vapps.getSaveBookInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY): boolean
+```
+#### ◉ Vapps.setSaveHistoryInLocal (x, y, isSaveHistoryInLocal)
+INTERFACE
+```
+Vapps.setSaveHistoryInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, isSaveHistoryInLocal: boolean)
+```
+#### ◉ Vapps.getSaveHistoryInLocal (x, y)
+INTERFACE
+```
+Vapps.getSaveHistoryInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY): boolean
+```
+#### ◉ Vapps.setSaveSpeedDialInLocal (x, y, isSaveSpeedDialInLocal)
+INTERFACE
+```
+Vapps.setSaveSpeedDialInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, isSaveSpeedDialInLocal: boolean)
+```
+#### ◉ Vapps.getSaveSpeedDialInLocal (x, y)
+INTERFACE
+```
+Vapps.getSaveSpeedDialInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY): boolean
+```
 #### ◉ Vapps.getPhoneI18nDictionary (x, y, asJsonStr, indent)
 INTERFACE
 ```
 Vapps.getPhoneI18nDictionary (x: VappsPhoneLowerX, y: VappsPhoneLowerY, asJsonStr?: boolean, indent?: boolean): string | VappsPhoneDictionary
+```
+#### ◉ Vapps.getPhoneBookItemSample ()
+INTERFACE
+```
+Vapps.getPhoneBookItemSample (): VappsPhoneBookItem
+```
+#### ◉ Vapps.getPhoneHistoryItemSample ()
+INTERFACE
+```
+Vapps.getPhoneHistoryItemSample (): VappsPhoneHistoryItem
+```
+#### ◉ Vapps.getPhoneSpeedDialItemSample ()
+INTERFACE
+```
+Vapps.getPhoneSpeedDialItemSample (): VappsPhoneSpeedDialItem
 ```
 #### ◉ Vapps.putPhoneBookItems (x, y, items)
 INTERFACE
@@ -103,6 +159,36 @@ INTERFACE
 ```
 Vapps.putPhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
 ```
+#### ◉ Vapps.putPhoneBookItemsLocal (x, y, items)
+INTERFACE
+```
+Vapps.putPhoneBookItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[]): boolean
+```
+#### ◉ Vapps.putPhoneBookItemsLocalByUrl (x, y, url, headers)
+INTERFACE
+```
+Vapps.putPhoneBookItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
+```
+#### ◉ Vapps.putPhoneHistoryItemsLocal (x, y, items)
+INTERFACE
+```
+Vapps.putPhoneHistoryItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[]): boolean
+```
+#### ◉ Vapps.putPhoneHistoryItemsLocalByUrl (x, y, url, headers)
+INTERFACE
+```
+Vapps.putPhoneHistoryItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
+```
+#### ◉ Vapps.putPhoneSpeedDialItemsLocal (x, y, items)
+INTERFACE
+```
+Vapps.putPhoneSpeedDialItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[]): boolean
+```
+#### ◉ Vapps.putPhoneSpeedDialItemsLocalByUrl (x, y, url, headers)
+INTERFACE
+```
+Vapps.putPhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
+```
 #### ◉ Vapps.pushPhoneBookItems (x, y, items)
 INTERFACE
 ```
@@ -133,6 +219,36 @@ INTERFACE
 ```
 Vapps.pushPhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
 ```
+#### ◉ Vapps.pushPhoneBookItemsLocal (x, y, items)
+INTERFACE
+```
+Vapps.pushPhoneBookItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[]): boolean
+```
+#### ◉ Vapps.pushPhoneBookItemsLocalByUrl (x, y, url, headers)
+INTERFACE
+```
+Vapps.pushPhoneBookItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
+```
+#### ◉ Vapps.pushPhoneHistoryItemsLocal (x, y, items)
+INTERFACE
+```
+Vapps.pushPhoneHistoryItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[]): boolean
+```
+#### ◉ Vapps.pushPhoneHistoryItemsLocalByUrl (x, y, url, headers)
+INTERFACE
+```
+Vapps.pushPhoneHistoryItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
+```
+#### ◉ Vapps.pushPhoneSpeedDialItemsLocal (x, y, items)
+INTERFACE
+```
+Vapps.pushPhoneSpeedDialItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[]): boolean
+```
+#### ◉ Vapps.pushPhoneSpeedDialItemsLocalByUrl (x, y, url, headers)
+INTERFACE
+```
+Vapps.pushPhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
+```
 #### ◉ Vapps.deletePhoneBookItems (x, y, itemIDs)
 INTERFACE
 ```
@@ -162,6 +278,36 @@ Vapps.deletePhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemI
 INTERFACE
 ```
 Vapps.deletePhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+```
+#### ◉ Vapps.deletePhoneBookItemsLocal (x, y, itemIDs)
+INTERFACE
+```
+Vapps.deletePhoneBookItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
+```
+#### ◉ Vapps.deletePhoneBookItemsLocalByUrl (x, y, url, headers)
+INTERFACE
+```
+Vapps.deletePhoneBookItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+```
+#### ◉ Vapps.deletePhoneHistoryItemsLocal (x, y, itemIDs)
+INTERFACE
+```
+Vapps.deletePhoneHistoryItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
+```
+#### ◉ Vapps.deletePhoneHistoryItemsLocalByUrl (x, y, url, headers)
+INTERFACE
+```
+Vapps.deletePhoneHistoryItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+```
+#### ◉ Vapps.deletePhoneSpeedDialItemsLocal (x, y, itemIDs)
+INTERFACE
+```
+Vapps.deletePhoneSpeedDialItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
+```
+#### ◉ Vapps.deletePhoneSpeedDialItemsLocalByUrl (x, y, url, headers)
+INTERFACE
+```
+Vapps.deletePhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
 ```
 
 ---
@@ -254,3 +400,182 @@ Vapps.dtmf()
 ```
 
 ---
+
+## VAPPS Phone Events
+### ⚫︎ ON_CREATED
+```
+```
+### ⚫︎ ON_MOUNTED
+```
+```
+### ⚫︎ ON_OPEN
+```
+```
+### ⚫︎ ON_CLOSE
+```
+```
+### ⚫︎ ON_OPEN_SNACKBAR
+```
+```
+### ⚫︎ ON_CLOSE_SNACKBAR
+```
+```
+### ⚫︎ ON_LOCALE_CHANGE
+```
+```
+### ⚫︎ ON_TAB_CHANGE
+```
+```
+### ⚫︎ ON_INPUT_NUMBER_CHANGE
+```
+```
+### ⚫︎ ON_CALL
+```
+```
+### ⚫︎ ON_FILTER_BOOK
+```
+```
+### ⚫︎ ON_FILTER_HISTORY
+```
+```
+### ⚫︎ ON_FILTER_SPEED_DIAL
+```
+```
+### ⚫︎ ON_PUT_BOOK_ITEMS
+```
+```
+### ⚫︎ ON_PUT_BOOK_ITEMS_BY_URL
+```
+```
+### ⚫︎ ON_PUT_HISTORY_ITEMS
+```
+```
+### ⚫︎ ON_PUT_HISTORY_ITEMS_BY_URL
+```
+```
+### ⚫︎ ON_PUT_SPEED_DIAL_ITEMS
+```
+```
+### ⚫︎ ON_PUT_SPEED_DIAL_ITEMS_BY_URL
+```
+```
+### ⚫︎ ON_PUSH_BOOK_ITEMS
+```
+```
+### ⚫︎ ON_PUSH_BOOK_ITEMS_BY_URL
+```
+```
+### ⚫︎ ON_PUSH_HISTORY_ITEMS
+```
+```
+### ⚫︎ ON_PUSH_HISTORY_ITEMS_BY_URL
+```
+```
+### ⚫︎ ON_PUSH_SPEED_DIAL_ITEMS
+```
+```
+### ⚫︎ ON_PUSH_SPEED_DIAL_ITEMS_BY_URL
+```
+```
+### ⚫︎ ON_DELETE_BOOK_ITEMS
+```
+```
+### ⚫︎ ON_DELETE_BOOK_ITEMS_BY_URL
+```
+```
+### ⚫︎ ON_DELETE_HISTORY_ITEMS
+```
+```
+### ⚫︎ ON_DELETE_HISTORY_ITEMS_BY_URL
+```
+```
+### ⚫︎ ON_DELETE_SPEED_DIAL_ITEMS
+```
+```
+### ⚫︎ ON_DELETE_SPEED_DIAL_ITEMS_BY_URL
+```
+```
+### ⚫︎ ON_CREATE_BOOK_ITEM
+```
+```
+### ⚫︎ ON_CREATE_SPEED_DIAL_ITEM
+```
+```
+### ⚫︎ ON_UPDATE_BOOK_ITEM
+```
+```
+### ⚫︎ ON_UPDATE_SPEED_DIAL_ITEM
+```
+```
+### ⚫︎ ON_DELETE_BOOK_ITEM
+```
+```
+### ⚫︎ ON_DELETE_HISTORY_ITEM
+```
+```
+### ⚫︎ ON_DELETE_SPEED_DIAL_ITEM
+```
+```
+### ⚫︎ ON_CLICK_BOOK_ITEM
+```
+```
+### ⚫︎ ON_CLICK_HISTORY_ITEM
+```
+```
+### ⚫︎ ON_CLICK_SPEED_DIAL_ITEM
+```
+```
+### ⚫︎ ON_RIGHT_CLICK_BOOK_ITEM
+```
+```
+### ⚫︎ ON_RIGHT_CLICK_HISTORY_ITEM
+```
+```
+### ⚫︎ ON_RIGHT_CLICK_SPEED_DIAL_ITEM
+```
+```
+### ⚫︎ ON_LONG_PRESS_BOOK_ITEM
+```
+```
+### ⚫︎ ON_LONG_PRESS_HISTORY_ITEM
+```
+```
+### ⚫︎ ON_LONG_PRESS_SPEED_DIAL_ITEM
+```
+```
+### ⚫︎ ON_CALL_BOOK_ITEM
+```
+```
+### ⚫︎ ON_CALL_HISTORY_ITEM
+```
+```
+### ⚫︎ ON_CALL_SPEED_DIAL_ITEM
+```
+```
+### ⚫︎ ON_LISTEN_BOOK_ITEM
+```
+```
+### ⚫︎ ON_LISTEN_SPEED_DIAL_ITEM
+```
+```
+### ⚫︎ ON_WHISPER_BOOK_ITEM
+```
+```
+### ⚫︎ ON_WHISPER_SPEED_DIAL_ITEM
+```
+```
+### ⚫︎ ON_BARGE_BOOK_ITEM
+```
+```
+### ⚫︎ ON_BARGE_SPEED_DIAL_ITEM
+```
+```
+### ⚫︎ ON_DETAIL_BOOK_ITEM
+```
+```
+### ⚫︎ ON_DETAIL_HISTORY_ITEM
+```
+```
+### ⚫︎ ON_DETAIL_SPEED_DIAL_ITEM
+```
+```
