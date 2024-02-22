@@ -132,32 +132,32 @@ Vapps.getPhoneSpeedDialItemSample (): VappsPhoneSpeedDialItem
 #### ◉ Vapps.putPhoneBookItems (x, y, items)
 INTERFACE
 ```
-Vapps.putPhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[])
+Vapps.putPhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[]): boolean
 ```
 #### ◉ Vapps.putPhoneBookItemsByUrl (x, y, url, headers)
 INTERFACE
 ```
-Vapps.putPhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+Vapps.putPhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
 #### ◉ Vapps.putPhoneHistoryItems (x, y, items)
 INTERFACE
 ```
-Vapps.putPhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[])
+Vapps.putPhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[]): boolean
 ```
 #### ◉ Vapps.putPhoneHistoryItemsByUrl (x, y, url, headers)
 INTERFACE
 ```
-Vapps.putPhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+Vapps.putPhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
 #### ◉ Vapps.putPhoneSpeedDialItems (x, y, items)
 INTERFACE
 ```
-Vapps.putPhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[])
+Vapps.putPhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[]): boolean
 ```
 #### ◉ Vapps.putPhoneSpeedDialItemsByUrl (x, y, url, headers)
 INTERFACE
 ```
-Vapps.putPhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+Vapps.putPhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
 #### ◉ Vapps.putPhoneBookItemsLocal (x, y, items)
 INTERFACE
@@ -192,32 +192,32 @@ Vapps.putPhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY
 #### ◉ Vapps.pushPhoneBookItems (x, y, items)
 INTERFACE
 ```
-Vapps.pushPhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[])
+Vapps.pushPhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[]): boolean
 ```
 #### ◉ Vapps.pushPhoneBookItemsByUrl (x, y, url, headers)
 INTERFACE
 ```
-Vapps.pushPhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+Vapps.pushPhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
 #### ◉ Vapps.pushPhoneHistoryItems (x, y, items)
 INTERFACE
 ```
-Vapps.pushPhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[])
+Vapps.pushPhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[]): boolean
 ```
 #### ◉ Vapps.pushPhoneHistoryItemsByUrl (x, y, url, headers)
 INTERFACE
 ```
-Vapps.pushPhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+Vapps.pushPhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
 #### ◉ Vapps.pushPhoneSpeedDialItems (x, y, items)
 INTERFACE
 ```
-Vapps.pushPhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[])
+Vapps.pushPhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[]): boolean
 ```
 #### ◉ Vapps.pushPhoneSpeedDialItemsByUrl (x, y, url, headers)
 INTERFACE
 ```
-Vapps.pushPhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+Vapps.pushPhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
 #### ◉ Vapps.pushPhoneBookItemsLocal (x, y, items)
 INTERFACE
@@ -249,65 +249,115 @@ INTERFACE
 ```
 Vapps.pushPhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
+#### ◉ Vapps.updatePhoneBookItems (x, y, items)
+INTERFACE
+```
+Vapps.updatePhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[]): boolean
+```
+#### ◉ Vapps.updatePhoneBookItemsByUrl (x, y, url, headers)
+INTERFACE
+```
+Vapps.updatePhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
+```
+#### ◉ Vapps.updatePhoneHistoryItems (x, y, items)
+INTERFACE
+```
+Vapps.updatePhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[]): boolean
+```
+#### ◉ Vapps.updatePhoneHistoryItemsByUrl (x, y, url, headers)
+INTERFACE
+```
+Vapps.updatePhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
+```
+#### ◉ Vapps.updatePhoneSpeedDialItems (x, y, items)
+INTERFACE
+```
+Vapps.updatePhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[]): boolean
+```
+#### ◉ Vapps.updatePhoneSpeedDialItemsByUrl (x, y, url, headers)
+INTERFACE
+```
+Vapps.updatePhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
+```
+#### ◉ Vapps.updatePhoneBookItemsLocal (x, y, items)
+INTERFACE
+```
+Vapps.updatePhoneBookItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[]): boolean
+```
+#### ◉ Vapps.updatePhoneBookItemsLocalByUrl (x, y, url, headers)
+INTERFACE
+```
+Vapps.updatePhoneBookItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
+```
+#### ◉ Vapps.updatePhoneSpeedDialItemsLocal (x, y, items)
+INTERFACE
+```
+Vapps.updatePhoneSpeedDialItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[]): boolean
+```
+#### ◉ Vapps.updatePhoneSpeedDialItemsLocalByUrl (x, y, url, headers)
+INTERFACE
+```
+Vapps.updatePhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
+```
 #### ◉ Vapps.deletePhoneBookItems (x, y, itemIDs)
 INTERFACE
 ```
-Vapps.deletePhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
+Vapps.deletePhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[]): boolean
 ```
 #### ◉ Vapps.deletePhoneBookItemsByUrl (x, y, url, headers)
 INTERFACE
 ```
-Vapps.deletePhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+Vapps.deletePhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
 #### ◉ Vapps.deletePhoneHistoryItems (x, y, itemIDs)
 INTERFACE
 ```
-Vapps.deletePhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
+Vapps.deletePhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[]): boolean
 ```
 #### ◉ Vapps.deletePhoneHistoryItemsByUrl (x, y, url, headers)
 INTERFACE
 ```
-Vapps.deletePhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+Vapps.deletePhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
 #### ◉ Vapps.deletePhoneSpeedDialItems (x, y, itemIDs)
 INTERFACE
 ```
-Vapps.deletePhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
+Vapps.deletePhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[]): boolean
 ```
 #### ◉ Vapps.deletePhoneSpeedDialItemsByUrl (x, y, url, headers)
 INTERFACE
 ```
-Vapps.deletePhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+Vapps.deletePhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
 #### ◉ Vapps.deletePhoneBookItemsLocal (x, y, itemIDs)
 INTERFACE
 ```
-Vapps.deletePhoneBookItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
+Vapps.deletePhoneBookItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[]): boolean
 ```
 #### ◉ Vapps.deletePhoneBookItemsLocalByUrl (x, y, url, headers)
 INTERFACE
 ```
-Vapps.deletePhoneBookItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+Vapps.deletePhoneBookItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
 #### ◉ Vapps.deletePhoneHistoryItemsLocal (x, y, itemIDs)
 INTERFACE
 ```
-Vapps.deletePhoneHistoryItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
+Vapps.deletePhoneHistoryItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[]): boolean
 ```
 #### ◉ Vapps.deletePhoneHistoryItemsLocalByUrl (x, y, url, headers)
 INTERFACE
 ```
-Vapps.deletePhoneHistoryItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+Vapps.deletePhoneHistoryItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
 #### ◉ Vapps.deletePhoneSpeedDialItemsLocal (x, y, itemIDs)
 INTERFACE
 ```
-Vapps.deletePhoneSpeedDialItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[])
+Vapps.deletePhoneSpeedDialItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[]): boolean
 ```
 #### ◉ Vapps.deletePhoneSpeedDialItemsLocalByUrl (x, y, url, headers)
 INTERFACE
 ```
-Vapps.deletePhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>)
+Vapps.deletePhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
 
 ---
@@ -459,6 +509,24 @@ Vapps.dtmf()
 ### ⚫︎ ON_PUT_SPEED_DIAL_ITEMS_BY_URL
 ```
 ```
+### ⚫︎ ON_PUT_BOOK_ITEMS_LOCAL
+```
+```
+### ⚫︎ ON_PUT_BOOK_ITEMS_LOCAL_BY_URL
+```
+```
+### ⚫︎ ON_PUT_HISTORY_ITEMS_LOCAL
+```
+```
+### ⚫︎ ON_PUT_HISTORY_ITEMS_LOCAL_BY_URL
+```
+```
+### ⚫︎ ON_PUT_SPEED_DIAL_ITEMS_LOCAL
+```
+```
+### ⚫︎ ON_PUT_SPEED_DIAL_ITEMS_LOCAL_BY_URL
+```
+```
 ### ⚫︎ ON_PUSH_BOOK_ITEMS
 ```
 ```
@@ -477,6 +545,60 @@ Vapps.dtmf()
 ### ⚫︎ ON_PUSH_SPEED_DIAL_ITEMS_BY_URL
 ```
 ```
+### ⚫︎ ON_PUSH_BOOK_ITEMS_LOCAL
+```
+```
+### ⚫︎ ON_PUSH_BOOK_ITEMS_LOCAL_BY_URL
+```
+```
+### ⚫︎ ON_PUSH_HISTORY_ITEMS_LOCAL
+```
+```
+### ⚫︎ ON_PUSH_HISTORY_ITEMS_LOCAL_BY_URL
+```
+```
+### ⚫︎ ON_PUSH_SPEED_DIAL_ITEMS_LOCAL
+```
+```
+### ⚫︎ ON_PUSH_SPEED_DIAL_ITEMS_LOCAL_BY_URL
+```
+```
+### ⚫︎ ON_UPDATE_BOOK_ITEMS
+```
+```
+### ⚫︎ ON_UPDATE_BOOK_ITEMS_BY_URL
+```
+```
+### ⚫︎ ON_UPDATE_HISTORY_ITEMS
+```
+```
+### ⚫︎ ON_UPDATE_HISTORY_ITEMS_BY_URL
+```
+```
+### ⚫︎ ON_UPDATE_SPEED_DIAL_ITEMS
+```
+```
+### ⚫︎ ON_UPDATE_SPEED_DIAL_ITEMS_BY_URL
+```
+```
+### ⚫︎ ON_UPDATE_BOOK_ITEMS_LOCAL
+```
+```
+### ⚫︎ ON_UPDATE_BOOK_ITEMS_LOCAL_BY_URL
+```
+```
+### ⚫︎ ON_UPDATE_HISTORY_ITEMS_LOCAL
+```
+```
+### ⚫︎ ON_UPDATE_HISTORY_ITEMS_LOCAL_BY_URL
+```
+```
+### ⚫︎ ON_UPDATE_SPEED_DIAL_ITEMS_LOCAL
+```
+```
+### ⚫︎ ON_UPDATE_SPEED_DIAL_ITEMS_LOCAL_BY_URL
+```
+```
 ### ⚫︎ ON_DELETE_BOOK_ITEMS
 ```
 ```
@@ -493,6 +615,24 @@ Vapps.dtmf()
 ```
 ```
 ### ⚫︎ ON_DELETE_SPEED_DIAL_ITEMS_BY_URL
+```
+```
+### ⚫︎ ON_DELETE_BOOK_ITEMS_LOCAL
+```
+```
+### ⚫︎ ON_DELETE_BOOK_ITEMS_LOCAL_BY_URL
+```
+```
+### ⚫︎ ON_DELETE_HISTORY_ITEMS_LOCAL
+```
+```
+### ⚫︎ ON_DELETE_HISTORY_ITEMS_LOCAL_BY_URL
+```
+```
+### ⚫︎ ON_DELETE_SPEED_DIAL_ITEMS_LOCAL
+```
+```
+### ⚫︎ ON_DELETE_SPEED_DIAL_ITEMS_LOCAL_BY_URL
 ```
 ```
 ### ⚫︎ ON_CREATE_BOOK_ITEM
