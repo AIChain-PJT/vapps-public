@@ -359,6 +359,16 @@ INTERFACE
 ```
 Vapps.deletePhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
+#### ◉ Vapps.openCallingMask (x, y, mode)
+INTERFACE
+```
+Vapps.openCallingMask (x: VappsPhoneLowerX, y: VappsPhoneLowerY, mode?: VappsPhoneCallingMaskModeType)
+```
+#### ◉ Vapps.closeCallingMask (x, y)
+INTERFACE
+```
+Vapps.closeCallingMask (x: VappsPhoneLowerX, y: VappsPhoneLowerY)
+```
 
 ---
 
@@ -633,6 +643,12 @@ Vapps.dtmf()
 ```
 ```
 ### ⚫︎ ON_DELETE_SPEED_DIAL_ITEMS_LOCAL_BY_URL
+```
+```
+### ⚫︎ ON_OPEN_CALLING_MASK
+```
+```
+### ⚫︎ ON_CLOSE_CALLING_MASK
 ```
 ```
 ### ⚫︎ ON_CREATE_BOOK_ITEM
