@@ -738,3 +738,39 @@ Vapps.dtmf()
 ### ⚫︎ ON_DETAIL_SPEED_DIAL_ITEM
 ```
 ```
+### ⚫︎ ON_CANCEL
+```
+```
+### ⚫︎ ON_REJECT
+```
+```
+### ⚫︎ ON_ACCEPT
+```
+```
+### ⚫︎ ON_TURN_MIC_ON
+```
+```
+### ⚫︎ ON_TURN_MIC_OFF
+```
+```
+### ⚫︎ ON_CLICK_KEYPAD
+```
+```
+### ⚫︎ ON_TURN_SPEAKER_ON
+```
+```
+### ⚫︎ ON_TURN_SPEAKER_OFF
+```
+```
+### ⚫︎ ON_TURN_HOLD_ON
+```
+```
+### ⚫︎ ON_TURN_HOLD_OFF
+```
+```
+### ⚫︎ ON_HANGUP
+```
+```
+### ⚫︎ ON_CLICK_TRANSFER
+```
+```
