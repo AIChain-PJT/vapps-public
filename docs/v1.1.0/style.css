@@ -23,10 +23,10 @@ body::before {
     left: 0;
     -webkit-mask-image: url(logo.png);
     mask-image: url(logo.png);
-    mask-size: contain;
+    mask-size: 50%;
     mask-repeat: no-repeat;
-    mask-position: left;
-    animation: gradient 30s infinite linear;
+    mask-position: center;
+    animation: gradient 60s infinite linear;
     background: linear-gradient(90deg, black, red, orange, yellow, green, blue, indigo, violet, pink, brown, white);
     background-size: 400% 100%;
     opacity: 0.2;
