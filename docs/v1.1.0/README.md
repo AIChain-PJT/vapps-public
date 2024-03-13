@@ -6,7 +6,7 @@
 ```
 - Vapps で発生する全ての Event に callback を設定します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.on (ename: string, callback: (e: CustomEvent) => void)
 ```
@@ -15,7 +15,7 @@ Vapps.on (ename: string, callback: (e: CustomEvent) => void)
 ```
 - Vapps.on() にて設定した Event の callback を削除します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.off (ename: string, callback: (e: CustomEvent) => void)
 ```
@@ -25,7 +25,7 @@ Vapps.off (ename: string, callback: (e: CustomEvent) => void)
 - 画面上に電話Appを表示させます
 - デフォルトの形は、フローティングアクションボタンです
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.phone (options: VappsPhoneOptions): string
 ```
@@ -34,7 +34,7 @@ Vapps.phone (options: VappsPhoneOptions): string
 ```
 - 表示されている電話Appフローティングアクションボタンを開きます
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.openPhone (x: VappsPhoneLowerX, y: VappsPhoneLowerY)
 ```
@@ -43,7 +43,7 @@ Vapps.openPhone (x: VappsPhoneLowerX, y: VappsPhoneLowerY)
 ```
 - 表示されている電話Appを閉じてフローティングアクションボタンに戻します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.closePhone (x: VappsPhoneLowerX, y: VappsPhoneLowerY)
 ```
@@ -52,7 +52,7 @@ Vapps.closePhone (x: VappsPhoneLowerX, y: VappsPhoneLowerY)
 ```
 - スナックバーとして任意のメッセージを開きます
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.openPhoneSnackbar (x: VappsPhoneLowerX, y: VappsPhoneLowerY, message: string, timeout?: number, icon?: string, line?: 1 | 2)
 ```
@@ -61,7 +61,7 @@ Vapps.openPhoneSnackbar (x: VappsPhoneLowerX, y: VappsPhoneLowerY, message: stri
 ```
 - 開いているスナックバーを閉じます
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.closePhoneSnackbar (x: VappsPhoneLowerX, y: VappsPhoneLowerY)
 ```
@@ -70,7 +70,7 @@ Vapps.closePhoneSnackbar (x: VappsPhoneLowerX, y: VappsPhoneLowerY)
 ```
 - 使用する言語を設定します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.setPhoneLocale(x: VappsPhoneLowerX, y: VappsPhoneLowerY, locale: VappsPhoneLocale)
 ```
@@ -79,7 +79,7 @@ Vapps.setPhoneLocale(x: VappsPhoneLowerX, y: VappsPhoneLowerY, locale: VappsPhon
 ```
 - 現在の言語名を取得します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.getPhoneLocale (x: VappsPhoneLowerX, y: VappsPhoneLowerY): VappsPhoneLocale | string
 ```
@@ -88,7 +88,7 @@ Vapps.getPhoneLocale (x: VappsPhoneLowerX, y: VappsPhoneLowerY): VappsPhoneLocal
 ```
 - 電話Appの特定のタブをアクティブにします
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.setPhoneTab (x: VappsPhoneLowerX, y: VappsPhoneLowerY, tab: VappsPhoneTabType)
 ```
@@ -97,7 +97,7 @@ Vapps.setPhoneTab (x: VappsPhoneLowerX, y: VappsPhoneLowerY, tab: VappsPhoneTabT
 ```
 - 現在アクティブになっているタブ名を取得します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.getPhoneTab (x: VappsPhoneLowerX, y: VappsPhoneLowerY): string
 ```
@@ -107,7 +107,7 @@ Vapps.getPhoneTab (x: VappsPhoneLowerX, y: VappsPhoneLowerY): string
 - 最後にアクティブになっていたタブを記憶するかどうかを設定します
 - 記憶する場合、次回起動時には最後にアクティブになっていたタブが自動的に開きます
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.setTabMemoryActive (x: VappsPhoneLowerX, y: VappsPhoneLowerY, isTabMemoryActive: boolean)
 ```
@@ -116,7 +116,7 @@ Vapps.setTabMemoryActive (x: VappsPhoneLowerX, y: VappsPhoneLowerY, isTabMemoryA
 ```
 - 現在のタブ記憶設定を取得します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.getTabMemoryActive (x: VappsPhoneLowerX, y: VappsPhoneLowerY): boolean
 ```
@@ -125,7 +125,7 @@ Vapps.getTabMemoryActive (x: VappsPhoneLowerX, y: VappsPhoneLowerY): boolean
 ```
 - ローカル電話帳を使用するか否かを設定します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.setSaveBookInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, isSaveBookInLocal: boolean)
 ```
@@ -134,7 +134,7 @@ Vapps.setSaveBookInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, isSaveBookIn
 ```
 - 現在のローカル電話帳使用有無設定を取得します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.getSaveBookInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY): boolean
 ```
@@ -143,7 +143,7 @@ Vapps.getSaveBookInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY): boolean
 ```
 - ローカル電話履歴を使用するか否かを設定します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.setSaveHistoryInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, isSaveHistoryInLocal: boolean)
 ```
@@ -152,7 +152,7 @@ Vapps.setSaveHistoryInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, isSaveHis
 ```
 - 現在のローカル電話履歴使用有無設定を取得します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.getSaveHistoryInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY): boolean
 ```
@@ -161,7 +161,7 @@ Vapps.getSaveHistoryInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY): boolean
 ```
 - ローカルスピードダイヤルを使用するか否かを設定します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.setSaveSpeedDialInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, isSaveSpeedDialInLocal: boolean)
 ```
@@ -170,7 +170,7 @@ Vapps.setSaveSpeedDialInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, isSaveS
 ```
 - 現在のローカルスピードダイヤル使用有無設定を取得します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.getSaveSpeedDialInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY): boolean
 ```
@@ -179,7 +179,7 @@ Vapps.getSaveSpeedDialInLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY): boolea
 ```
 - 現在適用されている i18n 言語辞書 JSON を取得します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.getPhoneI18nDictionary (x: VappsPhoneLowerX, y: VappsPhoneLowerY, asJsonStr?: boolean, indent?: boolean): string | VappsPhoneDictionary
 ```
@@ -188,7 +188,7 @@ Vapps.getPhoneI18nDictionary (x: VappsPhoneLowerX, y: VappsPhoneLowerY, asJsonSt
 ```
 - 電話帳のデータ1件のサンプルを取得します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.getPhoneBookItemSample (): VappsPhoneBookItem
 ```
@@ -197,7 +197,7 @@ Vapps.getPhoneBookItemSample (): VappsPhoneBookItem
 ```
 - 電話履歴のデータ1件のサンプルを取得します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.getPhoneHistoryItemSample (): VappsPhoneHistoryItem
 ```
@@ -206,7 +206,7 @@ Vapps.getPhoneHistoryItemSample (): VappsPhoneHistoryItem
 ```
 - スピードダイヤルのデータ1件のサンプルを取得します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.getPhoneSpeedDialItemSample (): VappsPhoneSpeedDialItem
 ```
@@ -216,7 +216,7 @@ Vapps.getPhoneSpeedDialItemSample (): VappsPhoneSpeedDialItem
 - 電話帳データを設置します
 - この関数を使用した場合、既存のデータを上書きすることに注意してください
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.putPhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[]): boolean
 ```
@@ -226,7 +226,7 @@ Vapps.putPhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsP
 - 指定したURLのAPIから電話帳データを取得して設置します
 - この関数を使用した場合、既存のデータを上書きすることに注意してください
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.putPhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -236,7 +236,7 @@ Vapps.putPhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: str
 - 電話履歴データを設置します
 - この関数を使用した場合、既存のデータを上書きすることに注意してください
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.putPhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[]): boolean
 ```
@@ -246,7 +246,7 @@ Vapps.putPhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: Vap
 - 指定したURLのAPIから電話履歴データを取得して設置します
 - この関数を使用した場合、既存のデータを上書きすることに注意してください
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.putPhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -256,7 +256,7 @@ Vapps.putPhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: 
 - スピードダイヤルデータを設置します
 - この関数を使用した場合、既存のデータを上書きすることに注意してください
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.putPhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[]): boolean
 ```
@@ -266,7 +266,7 @@ Vapps.putPhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: V
 - 指定したURLのAPIからスピードダイヤルデータを取得して設置します
 - この関数を使用した場合、既存のデータを上書きすることに注意してください
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.putPhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -276,7 +276,7 @@ Vapps.putPhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url
 - ローカル電話帳データを設置します
 - この関数を使用した場合、既存のローカルデータを上書きすることに注意してください
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.putPhoneBookItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[]): boolean
 ```
@@ -286,7 +286,7 @@ Vapps.putPhoneBookItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: V
 - 指定したURLのAPIからローカル電話帳データを取得して設置します
 - この関数を使用した場合、既存のローカルデータを上書きすることに注意してください
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.putPhoneBookItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -296,7 +296,7 @@ Vapps.putPhoneBookItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url
 - ローカル電話履歴データを設置します
 - この関数を使用した場合、既存のローカルデータを上書きすることに注意してください
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.putPhoneHistoryItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[]): boolean
 ```
@@ -306,7 +306,7 @@ Vapps.putPhoneHistoryItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items
 - 指定したURLのAPIからローカル電話履歴データを取得して設置します
 - この関数を使用した場合、既存のローカルデータを上書きすることに注意してください
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.putPhoneHistoryItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -316,7 +316,7 @@ Vapps.putPhoneHistoryItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, 
 - ローカルスピードダイヤルデータを設置します
 - この関数を使用した場合、既存のローカルデータを上書きすることに注意してください
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.putPhoneSpeedDialItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[]): boolean
 ```
@@ -326,7 +326,7 @@ Vapps.putPhoneSpeedDialItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, ite
 - 指定したURLのAPIからローカルスピードダイヤルデータを取得して設置します
 - この関数を使用した場合、既存のローカルデータを上書きすることに注意してください
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.putPhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -335,7 +335,7 @@ Vapps.putPhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY
 ```
 - 電話帳データを追加します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.pushPhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[]): boolean
 ```
@@ -344,7 +344,7 @@ Vapps.pushPhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: Vapps
 ```
 - 指定したURLのAPIから電話帳データを取得して追加します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.pushPhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -353,7 +353,7 @@ Vapps.pushPhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: st
 ```
 - 電話履歴データを追加します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.pushPhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[]): boolean
 ```
@@ -362,7 +362,7 @@ Vapps.pushPhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: Va
 ```
 - 指定したURLのAPIから電話履歴データを取得して追加します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.pushPhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -371,7 +371,7 @@ Vapps.pushPhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url:
 ```
 - スピードダイヤルデータを追加します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.pushPhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[]): boolean
 ```
@@ -380,7 +380,7 @@ Vapps.pushPhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: 
 ```
 - 指定したURLのAPIからスピードダイヤルデータを取得して追加します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.pushPhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -389,7 +389,7 @@ Vapps.pushPhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, ur
 ```
 - ローカル電話帳データを追加します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.pushPhoneBookItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[]): boolean
 ```
@@ -398,7 +398,7 @@ Vapps.pushPhoneBookItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: 
 ```
 - 指定したURLのAPIからローカル電話帳データを取得して追加します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.pushPhoneBookItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -407,7 +407,7 @@ Vapps.pushPhoneBookItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, ur
 ```
 - ローカル電話履歴データを追加します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.pushPhoneHistoryItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneHistoryItem[]): boolean
 ```
@@ -416,7 +416,7 @@ Vapps.pushPhoneHistoryItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, item
 ```
 - 指定したURLのAPIからローカル電話履歴データを取得して追加します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.pushPhoneHistoryItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -425,7 +425,7 @@ Vapps.pushPhoneHistoryItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY,
 ```
 - ローカルスピードダイヤルデータを追加します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.pushPhoneSpeedDialItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[]): boolean
 ```
@@ -434,7 +434,7 @@ Vapps.pushPhoneSpeedDialItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, it
 ```
 - 指定したURLのAPIからローカルスピードダイヤルデータを取得して追加します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.pushPhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -443,7 +443,7 @@ Vapps.pushPhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLower
 ```
 - 電話帳データを更新します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.updatePhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[]): boolean
 ```
@@ -452,7 +452,7 @@ Vapps.updatePhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: Vap
 ```
 - 指定したURLのAPIから電話帳データを取得して更新します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.updatePhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -461,7 +461,7 @@ Vapps.updatePhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: 
 ```
 - スピードダイヤルデータを更新します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.updatePhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[]): boolean
 ```
@@ -470,7 +470,7 @@ Vapps.updatePhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items
 ```
 - 指定したURLのAPIからスピードダイヤルデータを取得して更新します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.updatePhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -479,7 +479,7 @@ Vapps.updatePhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, 
 ```
 - ローカル電話帳データを更新します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.updatePhoneBookItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneBookItem[]): boolean
 ```
@@ -488,7 +488,7 @@ Vapps.updatePhoneBookItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items
 ```
 - 指定したURLのAPIからローカル電話帳データを取得して更新します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.updatePhoneBookItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -497,7 +497,7 @@ Vapps.updatePhoneBookItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, 
 ```
 - ローカルスピードダイヤルデータを更新します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.updatePhoneSpeedDialItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, items: VappsPhoneSpeedDialItem[]): boolean
 ```
@@ -506,7 +506,7 @@ Vapps.updatePhoneSpeedDialItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, 
 ```
 - 指定したURLのAPIからローカルスピードダイヤルデータを取得して更新します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.updatePhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -515,7 +515,7 @@ Vapps.updatePhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLow
 ```
 - 電話帳データを削除します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.deletePhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[]): boolean
 ```
@@ -524,7 +524,7 @@ Vapps.deletePhoneBookItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: s
 ```
 - 指定したURLのAPIから対象の電話帳データIDを取得して削除します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.deletePhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -533,7 +533,7 @@ Vapps.deletePhoneBookItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: 
 ```
 - 電話履歴データを削除します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.deletePhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[]): boolean
 ```
@@ -542,7 +542,7 @@ Vapps.deletePhoneHistoryItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs
 ```
 - 指定したURLのAPIから対象の電話履歴データIDを取得して削除します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.deletePhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -551,7 +551,7 @@ Vapps.deletePhoneHistoryItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, ur
 ```
 - スピードダイヤルデータを削除します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.deletePhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[]): boolean
 ```
@@ -560,7 +560,7 @@ Vapps.deletePhoneSpeedDialItems (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemI
 ```
 - 指定したURLのAPIから対象のスピードダイヤルデータIDを取得して削除します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.deletePhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -569,7 +569,7 @@ Vapps.deletePhoneSpeedDialItemsByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, 
 ```
 - ローカル電話帳データを削除します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.deletePhoneBookItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[]): boolean
 ```
@@ -578,7 +578,7 @@ Vapps.deletePhoneBookItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemI
 ```
 - 指定したURLのAPIから対象のローカル電話帳データIDを取得して削除します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.deletePhoneBookItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -587,7 +587,7 @@ Vapps.deletePhoneBookItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, 
 ```
 - ローカル電話履歴データを削除します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.deletePhoneHistoryItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[]): boolean
 ```
@@ -596,7 +596,7 @@ Vapps.deletePhoneHistoryItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, it
 ```
 - 指定したURLのAPIから対象のローカル電話履歴データIDを取得して削除します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.deletePhoneHistoryItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -605,7 +605,7 @@ Vapps.deletePhoneHistoryItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLower
 ```
 - ローカルスピードダイヤルデータを削除します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.deletePhoneSpeedDialItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, itemIDs: string[]): boolean
 ```
@@ -614,7 +614,7 @@ Vapps.deletePhoneSpeedDialItemsLocal (x: VappsPhoneLowerX, y: VappsPhoneLowerY, 
 ```
 - 指定したURLのAPIから対象のローカルスピードダイヤルデータIDを取得して削除します
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.deletePhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLowerY, url: string, headers: Record<string, string>): Promise<boolean>
 ```
@@ -623,7 +623,7 @@ Vapps.deletePhoneSpeedDialItemsLocalByUrl (x: VappsPhoneLowerX, y: VappsPhoneLow
 ```
 - 発信中や着信中、通話中等を示す画面を電話App内で開きます
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.openCallingMask (x: VappsPhoneLowerX, y: VappsPhoneLowerY, options?: VappsPhoneOpenCallingMaskOptions)
 ```
@@ -632,7 +632,7 @@ Vapps.openCallingMask (x: VappsPhoneLowerX, y: VappsPhoneLowerY, options?: Vapps
 ```
 - 発信中や着信中、通話中等を示す画面を電話App内で閉じます
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.closeCallingMask (x: VappsPhoneLowerX, y: VappsPhoneLowerY)
 ```
@@ -645,7 +645,7 @@ Vapps.closeCallingMask (x: VappsPhoneLowerX, y: VappsPhoneLowerY)
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.register()
 ```
@@ -654,7 +654,7 @@ Vapps.register()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.unregister()
 ```
@@ -663,7 +663,7 @@ Vapps.unregister()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.call()
 ```
@@ -672,7 +672,7 @@ Vapps.call()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.hangup()
 ```
@@ -681,7 +681,7 @@ Vapps.hangup()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.accept()
 ```
@@ -690,7 +690,7 @@ Vapps.accept()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.hold()
 ```
@@ -699,7 +699,7 @@ Vapps.hold()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.unhold()
 ```
@@ -708,7 +708,7 @@ Vapps.unhold()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.mute()
 ```
@@ -717,7 +717,7 @@ Vapps.mute()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.unmute()
 ```
@@ -726,7 +726,7 @@ Vapps.unmute()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.transfer()
 ```
@@ -735,7 +735,7 @@ Vapps.transfer()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.cancelTransfer()
 ```
@@ -744,7 +744,7 @@ Vapps.cancelTransfer()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.park()
 ```
@@ -753,7 +753,7 @@ Vapps.park()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.parkup()
 ```
@@ -762,7 +762,7 @@ Vapps.parkup()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.listen()
 ```
@@ -771,7 +771,7 @@ Vapps.listen()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.whisper()
 ```
@@ -780,7 +780,7 @@ Vapps.whisper()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.barge()
 ```
@@ -789,7 +789,7 @@ Vapps.barge()
 ```
 - coming soon
 ```
-Interface:  
+**Interface:**
 ```
 Vapps.dtmf()
 ```
@@ -801,727 +801,727 @@ Vapps.dtmf()
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_MOUNTED
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_OPEN
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CLOSE
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_OPEN_SNACKBAR
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CLOSE_SNACKBAR
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_LOCALE_CHANGE
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_TAB_CHANGE
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_INPUT_NUMBER_CHANGE
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CALL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_FILTER_BOOK
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_FILTER_HISTORY
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_FILTER_SPEED_DIAL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUT_BOOK_ITEMS
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUT_BOOK_ITEMS_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUT_HISTORY_ITEMS
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUT_HISTORY_ITEMS_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUT_SPEED_DIAL_ITEMS
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUT_SPEED_DIAL_ITEMS_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUT_BOOK_ITEMS_LOCAL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUT_BOOK_ITEMS_LOCAL_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUT_HISTORY_ITEMS_LOCAL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUT_HISTORY_ITEMS_LOCAL_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUT_SPEED_DIAL_ITEMS_LOCAL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUT_SPEED_DIAL_ITEMS_LOCAL_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUSH_BOOK_ITEMS
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUSH_BOOK_ITEMS_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUSH_HISTORY_ITEMS
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUSH_HISTORY_ITEMS_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUSH_SPEED_DIAL_ITEMS
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUSH_SPEED_DIAL_ITEMS_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUSH_BOOK_ITEMS_LOCAL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUSH_BOOK_ITEMS_LOCAL_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUSH_HISTORY_ITEMS_LOCAL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUSH_HISTORY_ITEMS_LOCAL_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUSH_SPEED_DIAL_ITEMS_LOCAL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUSH_SPEED_DIAL_ITEMS_LOCAL_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_UPDATE_BOOK_ITEMS
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_UPDATE_BOOK_ITEMS_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_UPDATE_HISTORY_ITEMS
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_UPDATE_HISTORY_ITEMS_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_UPDATE_SPEED_DIAL_ITEMS
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_UPDATE_SPEED_DIAL_ITEMS_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_UPDATE_BOOK_ITEMS_LOCAL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_UPDATE_BOOK_ITEMS_LOCAL_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_UPDATE_HISTORY_ITEMS_LOCAL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_UPDATE_HISTORY_ITEMS_LOCAL_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_UPDATE_SPEED_DIAL_ITEMS_LOCAL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_UPDATE_SPEED_DIAL_ITEMS_LOCAL_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_BOOK_ITEMS
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_BOOK_ITEMS_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_HISTORY_ITEMS
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_HISTORY_ITEMS_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_SPEED_DIAL_ITEMS
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_SPEED_DIAL_ITEMS_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_BOOK_ITEMS_LOCAL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_BOOK_ITEMS_LOCAL_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_HISTORY_ITEMS_LOCAL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_HISTORY_ITEMS_LOCAL_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_SPEED_DIAL_ITEMS_LOCAL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_SPEED_DIAL_ITEMS_LOCAL_BY_URL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_OPEN_CALLING_MASK
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CLOSE_CALLING_MASK
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_PUT_CUSTOM_CALLING_MASK_HTML
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CREATE_BOOK_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CREATE_SPEED_DIAL_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_UPDATE_BOOK_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_UPDATE_SPEED_DIAL_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_BOOK_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_HISTORY_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DELETE_SPEED_DIAL_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CLICK_BOOK_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CLICK_HISTORY_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CLICK_SPEED_DIAL_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_RIGHT_CLICK_BOOK_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_RIGHT_CLICK_HISTORY_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_RIGHT_CLICK_SPEED_DIAL_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_LONG_PRESS_BOOK_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_LONG_PRESS_HISTORY_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_LONG_PRESS_SPEED_DIAL_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CALL_BOOK_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CALL_HISTORY_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CALL_SPEED_DIAL_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_LISTEN_BOOK_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_LISTEN_SPEED_DIAL_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_WHISPER_BOOK_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_WHISPER_SPEED_DIAL_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_BARGE_BOOK_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_BARGE_SPEED_DIAL_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DETAIL_BOOK_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DETAIL_HISTORY_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_DETAIL_SPEED_DIAL_ITEM
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CANCEL
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_REJECT
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_ACCEPT
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_TURN_MIC_ON
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_TURN_MIC_OFF
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CLICK_KEYPAD
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_TURN_SPEAKER_ON
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_TURN_SPEAKER_OFF
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_TURN_HOLD_ON
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_TURN_HOLD_OFF
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_HANGUP
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
 ### ⚫︎ ON_CLICK_TRANSFER
 **概要:**
 ```
 ```
-使用例:  
+**使用例:**
 ```
 ```
