@@ -1,4 +1,6 @@
 # AIChain VAPPS v1.1.0
+NOTE: 下記にて使用されているデータ型については、**[コチラ](./VappsModel.ts)** をご参照・ご利用ください。
+
 ## VAPPS Phone 呼び出し関数
 ### ◼️ アプリ操作
 #### ◉ Vapps.on (ename, callback)
