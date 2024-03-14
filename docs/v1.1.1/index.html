@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <title>AIChain Vapps</title>
+  </head>
+  <body>
+    <script src="vapps-v1.1.1.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      const v = window.Vapps
+      v.on(v.Event.PHONE.ON_MOUNTED.RIGHT.BOTTOM, () => {
+        const baseURL = 'https://raw.githubusercontent.com/t-kawata/assets/master/json/vapps'
+        v.putPhoneBookItemsByUrl(v.PhoneX.RIGHT, v.PhoneY.BOTTOM, `${baseURL}/book_items.json`, {})
+        v.putPhoneHistoryItemsByUrl(v.PhoneX.RIGHT, v.PhoneY.BOTTOM, `${baseURL}/history_items.json`, {})
+        v.putPhoneSpeedDialItemsByUrl(v.PhoneX.RIGHT, v.PhoneY.BOTTOM, `${baseURL}/speed_dial_items.json`, {})
+      })
+      v.phone()
+    </script>
+  </body>
+</html>
