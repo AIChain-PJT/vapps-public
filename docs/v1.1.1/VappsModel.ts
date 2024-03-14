@@ -1,3 +1,5 @@
+const DEFAULT_CALLING_TIMEOUT = 360
+
 export type VappsRunType = 'PHONE' | 'APP'
 export interface VappsPositionType {
     name: string
@@ -256,7 +258,8 @@ export type VappsPhoneOpenCallingMaskOptions = {
     mode?: VappsPhoneCallingMaskModeType,
     tables?: VappsPhoneCallingMaskTable[],
     html?: string,
-    isFullCustom?: boolean
+    isFullCustom?: boolean,
+    timeout?: number
 }
 
 export const VappsPhoneOpenCallingMaskOptionsSample = {
@@ -264,7 +267,8 @@ export const VappsPhoneOpenCallingMaskOptionsSample = {
     mode: VappsPhoneCallingMaskMode.CALLING,
     tables: VappsPhoneCallingMaskTablesSample,
     html: '<span>Vapps</span>',
-    isFullCustom: false
+    isFullCustom: false,
+    timeout: DEFAULT_CALLING_TIMEOUT
 } as VappsPhoneOpenCallingMaskOptions
 
 /*****************************
