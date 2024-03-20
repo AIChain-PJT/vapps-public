@@ -15,3 +15,8 @@
 - [v1.1.2](docs/v1.1.2/README.md)
 - [v1.1.1](docs/v1.1.1/README.md)
 - [v1.1.0](docs/v1.1.0/README.md)
+
+## VAPPS Demo Page
+- [v1.1.2](https://aichain-pjt.github.io/vapps-public/v1.1.2/)
+- [v1.1.1](https://aichain-pjt.github.io/vapps-public/v1.1.1/)
+- [v1.1.0](https://aichain-pjt.github.io/vapps-public/v1.1.0/)
