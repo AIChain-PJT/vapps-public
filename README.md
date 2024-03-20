@@ -12,6 +12,6 @@
 
 
 ## VAPPS Document
-- [v1.1.0](docs/v1.1.0/README.md)
-- [v1.1.1](docs/v1.1.1/README.md)
 - [v1.1.2](docs/v1.1.2/README.md)
+- [v1.1.1](docs/v1.1.1/README.md)
+- [v1.1.0](docs/v1.1.0/README.md)
