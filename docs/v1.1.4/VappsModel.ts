@@ -87,6 +87,8 @@ export interface VappsPhoneOptionsOtherSettings {
     isSaveBookInLocal: boolean
     isSaveHistoryInLocal: boolean
     isSaveSpeedDialInLocal: boolean
+    isUsePark: boolean
+    isUseTransfer: boolean
     isEventLogOn: boolean
 }
 
@@ -214,6 +216,8 @@ export const VappsPhoneConsts = {
         IS_SAVE_BOOK_IN_LOCAL: 'IS_SAVE_BOOK_IN_LOCAL',
         IS_SAVE_HISTORY_IN_LOCAL: 'IS_SAVE_HISTORY_IN_LOCAL',
         IS_SAVE_SPEED_DIAL_IN_LOCAL: 'IS_SAVE_SPEED_DIAL_IN_LOCAL',
+        IS_USE_PARK: 'IS_USE_PARK',
+        IS_USE_TRANSFER: 'IS_USE_TRANSFER',
         IS_EVENT_LOG: 'IS_EVENT_LOG',
     }
 }
@@ -526,9 +530,6 @@ export type VappsEventPhoneOnUpdateSpeedDialItemsLocalByUrl = {
     newItems: VappsPhoneSpeedDialItem[]
     requestedItemsLocal: VappsPhoneSpeedDialItem[]
 }
-
-
-
 export type VappsEventPhoneOnDeleteBookItems = {
     id: string
     oldItems: VappsPhoneBookItem[]
@@ -796,6 +797,10 @@ export interface VappsEventPhoneOnClickTransfer {
 export interface VappsEventPhoneOnClickKeypadNumber {
     id: string
     number: string
+}
+export type VappsEventPhoneOnTransferInTalking = {
+    id: string
+    item: VappsPhoneBookItem
 }
 
 /*****************************
